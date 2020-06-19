@@ -1,0 +1,1194 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EIRA.Application</name>
+    </assembly>
+    <members>
+        <member name="P:EIRA.Authorization.Accounts.Dto.LoginOutput.Token">
+            <summary>
+            登錄憑證
+            </summary>
+        </member>
+        <member name="P:EIRA.Authorization.Accounts.Dto.LoginOutput.IsForceChangPwd">
+            <summary>
+            是否需強制更改密碼
+            </summary>
+        </member>
+        <member name="P:EIRA.Authorization.Accounts.Dto.LoginOutput.Image">
+            <summary>
+            頭像
+            </summary>
+        </member>
+        <member name="P:EIRA.Authorization.Accounts.Dto.LoginOutput.CurrentUser">
+            <summary>
+            當前登入人姓名
+            </summary>
+        </member>
+        <member name="M:EIRA.Authorization.Accounts.AccountAppService.Logout">
+            <summary>
+            註銷
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Authorization.Accounts.AccountAppService.ForgetPassword(EIRA.Authorization.Accounts.Dto.ForgetPasswordInput)">
+            <summary>
+            忘记密码邮箱提交
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Authorization.Accounts.AccountAppService.ResetPassword(EIRA.Authorization.Accounts.Dto.ResetPPasswordInput)">
+            <summary>
+            重置密码
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Authorization.Accounts.IAccountAppService.AdminLogin(EIRA.Authorization.Accounts.Dto.LoginInput)">
+            <summary>
+            Admin登入
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Authorization.Accounts.IAccountAppService.Login(EIRA.Authorization.Accounts.Dto.LoginInput)">
+            <summary>
+            普通用戶登入
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Authorization.Accounts.IAccountAppService.Logout">
+            <summary>
+            登出
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Authorization.Accounts.IAccountAppService.ForgetPassword(EIRA.Authorization.Accounts.Dto.ForgetPasswordInput)">
+            <summary>
+            忘记密码邮箱提交
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Authorization.Accounts.IAccountAppService.ResetPassword(EIRA.Authorization.Accounts.Dto.ResetPPasswordInput)">
+            <summary>
+            重置密码
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="P:EIRA.BUsManagement.Dto.BUsDto.BUName">
+            <summary>
+            BU Name
+            </summary>
+        </member>
+        <member name="P:EIRA.BUsManagement.Dto.BUsInputDto.IsOnlyShowActiveStatus">
+            <summary>
+            是否只顯示Active Status資料
+            </summary>
+        </member>
+        <member name="P:EIRA.BUsManagement.Dto.BUsOutputDto.BUName">
+            <summary>
+            BU Name
+            </summary>
+        </member>
+        <member name="P:EIRA.BUsManagement.Dto.BUsOutputDto.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="M:EIRA.BUsManagement.IBUsAppService.GetAll(EIRA.BUsManagement.Dto.BUsInputDto)">
+            <summary>
+            取得所有的BUs資料
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.BUsManagement.IBUsAppService.InsertOrUpdate(System.Collections.Generic.List{EIRA.BUsManagement.Dto.BUsDto})">
+            <summary>
+            更新BUs資料
+            </summary>
+            <param name="input">BUs 資料</param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Common.CommonAppService.UploadImage">
+            <summary>
+            上傳圖片
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Common.CommonAppService.UploadAccessory">
+            <summary>
+            上傳附件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Common.ICommonAppService.UploadImage">
+            <summary>
+            上傳圖片
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Common.ICommonAppService.UploadAccessory">
+            <summary>
+            上傳文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EIRA.EIRAAppServiceBase">
+            <summary>
+            Derive your application services from this class.
+            </summary>
+        </member>
+        <member name="F:EIRA.EIRAAppServiceBase.Succeed">
+            <summary>
+            常量，表示成功
+            </summary>
+        </member>
+        <member name="F:EIRA.EIRAAppServiceBase.InternalServerError">
+            <summary>
+            常量，表示返回InternalServerError错误:业务错误
+            </summary>
+        </member>
+        <member name="F:EIRA.EIRAAppServiceBase.SystemError">
+            <summary>
+            常量，表示系统错误
+            </summary>
+        </member>
+        <member name="P:EIRA.EntitiesManagement.Dto.EntitiesInputDto.IsOnlyShowActiveStatus">
+            <summary>
+            是否只顯示Active Status資料
+            </summary>
+        </member>
+        <member name="P:EIRA.EntitiesManagement.Dto.EntitiesOutputDto.EntityName">
+            <summary>
+            Entity Name
+            </summary>
+        </member>
+        <member name="P:EIRA.EntitiesManagement.Dto.EntitiesOutputDto.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="P:EIRA.EntitiesManagement.Dto.EntitiesDto.EntityName">
+            <summary>
+            Entity Name
+            </summary>
+        </member>
+        <member name="M:EIRA.EntitiesManagement.IEntitiesAppService.GetAll(EIRA.EntitiesManagement.Dto.EntitiesInputDto)">
+            <summary>
+            取得所有的Entities資料
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.EntitiesManagement.IEntitiesAppService.InsertOrUpdate(System.Collections.Generic.List{EIRA.EntitiesManagement.Dto.EntitiesDto})">
+            <summary>
+            更新Entities資料
+            </summary>
+            <param name="input">Entities 資料</param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.HangFire.IHangFireAppService.AddOrUpdateJob">
+            <summary>
+            創建或更新JOB
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.HangFire.IHangFireAppService.ClosedJob">
+            <summary>
+            刪除JOB
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.HangFire.IHangFireAppService.StartJob">
+            <summary>
+            立即執行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.GetMyQuestionnaireInfoInputDto.BUId">
+            <summary>
+            admin 進來會傳入BUId
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEntityDto.EntityName">
+            <summary>
+            Entity Name
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.QuestionnairesAsignId">
+            <summary>
+            Questionnaires Asign Id
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.QuestionId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.QuestionCode">
+            <summary>
+            Question Code（頁面顯示的Question Id）
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.Question">
+            <summary>
+            Question
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.Answers">
+            <summary>
+            Answers
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.SelectedAnswer">
+            <summary>
+            Selected Answer
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.SelectedAnswerId">
+            <summary>
+            Selected Answer Id
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.FreeTextPlaceholder">
+            <summary>
+            Free Text Placeholder
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.FreeText">
+            <summary>
+            Free Text
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.SupportingDocument">
+            <summary>
+            SupportingDocument
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.HasAnswer">
+            <summary>
+            Has Answer
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.IsAnswerMandatory">
+            <summary>
+            Is Answer Mandatory
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.HasFreeText">
+            <summary>
+            Has Free Text
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.IsFreeTextMandatory">
+            <summary>
+            Is Free Text Mandatory
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.IsFreeTextNumeric">
+            <summary>
+            Is Free Text Numeric
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.HasSupportingDocument">
+            <summary>
+            Has Supporting Document
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.IsSupportingDocumentMandatory">
+            <summary>
+            Is Supporting Document Mandatory
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto.HasBeenAnswered">
+            <summary>
+            是否已作答
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireInputDto.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireInputDto.QuestionnaireName">
+            <summary>
+            問卷名稱
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireInputDto.Sorting">
+            <summary>
+            Sorting
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireQuestionAnswerDto.AnswerContent">
+            <summary>
+            選項內容
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireQuestionTypeDto.QuestionTypeName">
+            <summary>
+            Question Type Name
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnairesEditOutputDto.HasBeenAnsweredCount">
+            <summary>
+            已做答問題總數
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnairesEditOutputDto.QuestionCount">
+            <summary>
+            問題總數
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnairesEditOutputDto.IsReadOnly">
+            <summary>
+            是否只讀
+            Status:Finished 只能查看
+            Admin System 進入也是只能查看，要登入回答問卷系統才能編輯
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnairesEditOutputDto.Questionnaire">
+            <summary>
+            問題
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireSupportingDocumentDto.Name">
+            <summary>
+            Supporting Document Name
+            </summary>
+        </member>
+        <member name="P:EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireSupportingDocumentDto.PathUrl">
+            <summary>
+            PathUrl
+            </summary>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IMyQuestionnaireAppService.GetMyQuestionnaireStatusCount">
+            <summary>
+            取得Questionnaire Status Count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IMyQuestionnaireAppService.GetAll(EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireInputDto)">
+            <summary>
+            取得用戶(部門的)所有Questionnaire資料
+            </summary>
+            <param name="input">查詢條件</param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IMyQuestionnaireAppService.GetQuestionnaireQuestionType(EIRA.MyQuestionnaireManagement.Dto.GetMyQuestionnaireInfoInputDto)">
+            <summary>
+            根據Questionnaire Id、BUId(admin會傳BUId)獲得對應的Question Type資料
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IMyQuestionnaireAppService.GetQuestionnaireEntity(EIRA.MyQuestionnaireManagement.Dto.GetMyQuestionnaireInfoInputDto)">
+            <summary>
+            根據Questionnaire Id、BUId(admin要傳BUId)、Question Type Id獲得對應的Entities資料
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IMyQuestionnaireAppService.GetQuestionnaireInfo(EIRA.MyQuestionnaireManagement.Dto.GetMyQuestionnaireInfoInputDto)">
+            <summary>
+            根據Questionnaire Id、Entity Id、Question Type Id、(admin會傳BUId)獲得對應的Questionnaire資料
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IMyQuestionnaireAppService.UpdateMyQuestionnaire(System.Collections.Generic.List{EIRA.MyQuestionnaireManagement.Dto.MyQuestionnaireEditDto})">
+            <summary>
+            更新Questionnaire資料
+            </summary>
+            <param name="input">Questionnaire 資料</param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.MyQuestionnaireAppService.GetQuestionnaireQuestionType(EIRA.MyQuestionnaireManagement.Dto.GetMyQuestionnaireInfoInputDto)">
+            <summary>
+            取得問卷中的所有 Question Type（admin 會傳 BUId，不是 admin 則取當前BUId）
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.MyQuestionnaireAppService.GetQuestionnaireEntity(EIRA.MyQuestionnaireManagement.Dto.GetMyQuestionnaireInfoInputDto)">
+            <summary>
+            取得問卷中的所有 Entity（admin 會傳 BUId，不是 admin 則取當前BUId）
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.MyQuestionnaireAppService.GetFinishedQuestionnaireQuestionType(System.Int32,System.Int32)">
+            <summary>
+            取得 Finished Questionnaire Question Type 資料
+            </summary>
+            <param name="QuestionnaireId">Questionnaire Id</param>
+            <param name="BUId">BU Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.MyQuestionnaireAppService.GetFinishedQuestionnaireEntity(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            取得 Finished Questionnaire Entity 資料
+            </summary>
+            <param name="QuestionnaireId">Questionnaire Id</param>
+            <param name="BUId">BU Id</param>
+            <param name="QuestionTypeId">QuestionType Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.MyQuestionnaireAppService.GetFinishedQuestionnaireInfo(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            取得 Finished Questionnaire 資料
+            </summary>
+            <param name="QuestionnaireId">Questionnaire Id</param>
+            <param name="BUId">BU Id</param>
+            <param name="QuestionTypeId">QuestionType Id</param>
+            <param name="EntitiesId">Entities Id</param>
+            <returns></returns>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignDto.Entities">
+            <summary>
+            Entities info
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignDto.AsignQuestionType">
+            <summary>
+            Asign info
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignEntitiesInputDto.EntitiesId">
+            <summary>
+            Entities Id
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignQuestionTypeDto.QuestionTypeId">
+            <summary>
+            Question Type Id
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignQuestionTypeDto.QuestionTypeName">
+            <summary>
+            Question Type Name
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignQuestionTypeDto.Questions">
+            <summary>
+            Questions
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.CRQBUsEntitiesDto.EntityName">
+            <summary>
+            Entity Name
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.CRQBUsEntitiesDto.Progress">
+            <summary>
+            Progress
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireQuestionTypeDto.QuestionTypeName">
+            <summary>
+            Question Type Name
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireAsignEntitiesBUsDto.BUName">
+            <summary>
+            BU Name
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignEntitiesDto.EntitiesId">
+            <summary>
+            Entities Id
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignEntitiesDto.EntityName">
+            <summary>
+            Entity Name
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignEntitiesDto.IsChangeBU">
+            <summary>
+            是否更改BU(給前端使用)
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignEntitiesDto.BUs">
+            <summary>
+            Questionnaire Asign Entities BUs
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireAsignInputDto.QuestionnaireId">
+            <summary>
+            Question Id
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireAsignInputDto.SelectedQuestionTypeId">
+            <summary>
+            Selected Question Type Id
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignQuestionDto.QuestionId">
+            <summary>
+            Question Id
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignQuestionDto.QuestionCode">
+            <summary>
+            Question Code（頁面顯示的Question Id）
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignQuestionDto.Question">
+            <summary>
+            Question
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignQuestionDto.SingleAnswer">
+            <summary>
+            Single Answer
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignQuestionDto.Entities">
+            <summary>
+            Entities
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireDto.QuestionnaireCode">
+            <summary>
+            問卷編號（頁面顯示的Questionnaire Id）
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireDto.QuestionnaireName">
+            <summary>
+            問卷名稱
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireDto.RiskType">
+            <summary>
+            風險類型
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireDto.Status">
+            <summary>
+            狀態
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireDto.SubmissionDeadline">
+            <summary>
+            Submission Deadline
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireDto.QuestionType">
+            <summary>
+            問題類型
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireForEditInputDto.Questionnaire">
+            <summary>
+            Questionnaire Info
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireInputDto.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireInputDto.QuestionnaireName">
+            <summary>
+            問卷名稱
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireInputDto.Sorting">
+            <summary>
+            Sorting
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireOutputDto.Status">
+            <summary>
+            狀態
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireOutputDto.QuestionnaireName">
+            <summary>
+            問卷名稱
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireOutputDto.SubmissionDeadline">
+            <summary>
+            Submission Deadline
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireOutputDto.Progress">
+            <summary>
+            Progress
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireOutputDto.RiskType">
+            <summary>
+            風險類型
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.QuestionnaireOutputDto.IsEdit">
+            <summary>
+            是否允許編輯
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.AsignQuestionsInputDto.SingleAnswer">
+            <summary>
+            Single Answer
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.SupportingDocumentInputDto.EntitiesId">
+            <summary>
+            Entity Id
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.SupportingDocumentInputDto.BUId">
+            <summary>
+            BU Id
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionnaireManagement.Dto.SupportingDocumentInputDto.QuestionTypeId">
+            <summary>
+            Question Type Id
+            </summary>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IQuestionnaireAppService.GetQuestionnaireStatusCount">
+            <summary>
+            取得Questionnaire Status Count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IQuestionnaireAppService.GetAll(EIRA.QuestionnaireManagement.Dto.QuestionnaireInputDto)">
+            <summary>
+            取得所有的Questionnaire資料
+            </summary>
+            <param name="input">查詢條件</param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IQuestionnaireAppService.GetQuestionnaireById(Abp.Application.Services.Dto.NullableIdDto)">
+            <summary>
+            根據Id獲得對應的Questionnaire資料
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IQuestionnaireAppService.GetQuestionnaireAsign(EIRA.QuestionnaireManagement.Dto.QuestionnaireAsignInputDto)">
+            <summary>
+            獲得對應的Questionnaire Asign資料
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IQuestionnaireAppService.InsertOrUpdate(EIRA.QuestionnaireManagement.Dto.QuestionnaireForEditInputDto)">
+            <summary>
+            更新Questionnaire資料
+            </summary>
+            <param name="input">Questionnaire 資料</param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IQuestionnaireAppService.GetQuestionnaireQuestionType(Abp.Application.Services.Dto.NullableIdDto)">
+            <summary>
+            根據Questionnaire Id獲得對應的Question Type資料
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IQuestionnaireAppService.GetQuestionnaireBUs(Abp.Application.Services.Dto.NullableIdDto)">
+            <summary>
+            根據Questionnaire Id獲得對應的BUs資料
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IQuestionnaireAppService.GetQuestionnaireEntity(Abp.Application.Services.Dto.NullableIdDto)">
+            <summary>
+            Get Control Risk Questionnaire Entity
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IQuestionnaireAppService.GetControlRiskQuestionnaire(EIRA.QuestionnaireManagement.Dto.ControlRiskQuestionnaireInputDto)">
+            <summary>
+            Get Control Risk Questionnaire
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IQuestionnaireAppService.GetSupportingDocument(EIRA.QuestionnaireManagement.Dto.SupportingDocumentInputDto)">
+            <summary>
+            取得Supporting Document資料
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.IQuestionnaireAppService.ExportQuestionnaire(Abp.Application.Services.Dto.NullableIdDto)">
+            <summary>
+            導出Control Risk Questionnaire
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.QuestionnaireAppService.GetQuestionnaireEntityCommon(System.Int32)">
+            <summary>
+            取得 Questionnaire Entity 資料
+            </summary>
+            <param name="QuestionnaireId">Questionnaire Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.QuestionnaireAppService.GetFinishedQuestionnaireQuestionType(System.Int32)">
+            <summary>
+            取得 Finished Questionnaire Question Type 資料
+            </summary>
+            <param name="QuestionnaireId">Questionnaire Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.QuestionnaireAppService.InsertOrUpdateQuestionnairesFinished(System.Int32)">
+            <summary>
+            存儲Questionnaire資料,作為後期Questionnaire Finished資料查詢使用
+            </summary>
+            <param name="QuestionnairesId">Questionnaires Id</param>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.QuestionnaireAppService.GetFinishedQuestionnaireEntity(System.Int32)">
+            <summary>
+            取得 Control Risk Finished Questionnaire Entity
+            </summary>
+            <param name="QuestionnaireId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.QuestionnaireAppService.GetFinishedSupportingDocument(System.Int32,System.Int32)">
+            <summary>
+            取得 Finished Questionnaires SupportingDocument 資料
+            </summary>
+            <param name="QuestionnaireId">Questionnaires Id</param>
+            <param name="BUId">BU Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionnaireManagement.QuestionnaireAppService.GetFinishedQuestionnaires(System.Int32)">
+            <summary>
+            取得 Finished Questionnaires Question 資料
+            </summary>
+            <param name="QuestionnaireId">Questionnaires Id</param>
+            <returns></returns>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsAnswerDto.AnswerContent">
+            <summary>
+            選項內容
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsAnswerDto.RecommendedScore">
+            <summary>
+            推薦評分
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.QuestionTypeId">
+            <summary>
+            Question Type Id
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.QuestionCode">
+            <summary>
+            Question Code（頁面顯示的Question Id）
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.Question">
+            <summary>
+            Question
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.HighestRating">
+            <summary>
+            Highest Rating
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.ScoringMethod">
+            <summary>
+            Scoring Method
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.HasAnswer">
+            <summary>
+            Has Answer
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.IsAnswerMandatory">
+            <summary>
+            Is Answer Mandatory
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.HasFreeText">
+            <summary>
+            Has Free Text
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.FreeTextPlaceholder">
+            <summary>
+            Free Text Placeholder
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.IsFreeTextMandatory">
+            <summary>
+            Is Free Text Mandatory
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.IsFreeTextNumeric">
+            <summary>
+            Is Free Text Numeric
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.HasSupportingDocument">
+            <summary>
+            Has Supporting Document
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.IsSupportingDocumentMandatory">
+            <summary>
+            Is Supporting Document Mandatory
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.QuestionsAnswers">
+            <summary>
+            Aswer資料
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.UpdateTime">
+            <summary>
+            更新時間
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsDto.UpdateUser">
+            <summary>
+            更新人
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsInputDto.QuestionTypeId">
+            <summary>
+            Question Type
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsInputDto.Question">
+            <summary>
+            Question
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsInputDto.Sorting">
+            <summary>
+            Sorting
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsOutputDto.QuestionTypeId">
+            <summary>
+            Question Type Id
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsOutputDto.QuestionTypeName">
+            <summary>
+            Question Type Name
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsOutputDto.Id">
+            <summary>
+            Question Id
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsOutputDto.QuestionCode">
+            <summary>
+            Question Code（頁面顯示的Question Id）
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionsManagement.Dto.QuestionsOutputDto.Question">
+            <summary>
+            Question
+            </summary>
+        </member>
+        <member name="M:EIRA.QuestionsManagement.IQuestionsAppService.GetAll(EIRA.QuestionsManagement.Dto.QuestionsInputDto)">
+            <summary>
+            取得所有的Question資料
+            </summary>
+            <param name="input">查詢條件</param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionsManagement.IQuestionsAppService.Delete(Abp.Application.Services.Dto.NullableIdDto)">
+            <summary>
+            更新Questions資料為InActive
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionsManagement.IQuestionsAppService.GetQuestionsById(Abp.Application.Services.Dto.NullableIdDto)">
+            <summary>
+            根據Id獲得對應的Questions資料
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionsManagement.IQuestionsAppService.InsertOrUpdate(EIRA.QuestionsManagement.Dto.QuestionsDto)">
+            <summary>
+            更新Questions資料
+            </summary>
+            <param name="input">Questions 資料</param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionsManagement.QuestionsAppService.UpdateQuestionnaires(System.Collections.Generic.List{EIRA.Table.QuestionnairesAsign})">
+            <summary>
+            重置該問題的所有問卷答案
+            </summary>
+            <param name="parQuestionnairesAsignList">Questionnaires Asign 資料</param>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypeAllOutputDto.QuestionTypeId">
+            <summary>
+            Question Type Id
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypeAllOutputDto.QuestionTypeName">
+            <summary>
+            Question Type Name
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypesForEditOutputDto.QuestionTypeCode">
+            <summary>
+            Question Type Code(用於顯示)
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypesForEditOutputDto.QuestionTypeName">
+            <summary>
+            Question Type Name
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypesForEditOutputDto.Status">
+            <summary>
+            狀態
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypesForEditOutputDto.UpdateTime">
+            <summary>
+            更新時間
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypesForEditOutputDto.UpdateUser">
+            <summary>
+            更新人
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypesDto.QuestionTypeCode">
+            <summary>
+            Question Type Code(用於顯示)
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypesDto.QuestionTypeName">
+            <summary>
+            Question Type Name
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypesDto.Status">
+            <summary>
+            狀態
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypesInputDto.QuestionTypeName">
+            <summary>
+            Question Types Name
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypesInputDto.Sorting">
+            <summary>
+            排序方式
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypesInputDto.IsOnlyShowActiveStatus">
+            <summary>
+            是否只顯示Active Status資料
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypesOutputDto.QuestionTypeCode">
+            <summary>
+            Question Type Code(用於顯示)
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypesOutputDto.QuestionTypeName">
+            <summary>
+            Question Type Name
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypesOutputDto.NumberOfQuestions">
+            <summary>
+            No. of Questions
+            </summary>
+        </member>
+        <member name="P:EIRA.QuestionTypesManagement.Dto.QuestionTypesOutputDto.Status">
+            <summary>
+            狀態
+            </summary>
+        </member>
+        <member name="M:EIRA.QuestionTypesManagement.IQuestionTypesAppService.GetAll">
+            <summary>
+            取得所有的QuestionTypes資料(status==Active)(其它模塊使用)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionTypesManagement.IQuestionTypesAppService.GetPagedAll(EIRA.QuestionTypesManagement.Dto.QuestionTypesInputDto)">
+            <summary>
+            取得所有的QuestionTypes資料(分頁查詢)
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionTypesManagement.IQuestionTypesAppService.GetQuestionTypesById(Abp.Application.Services.Dto.NullableIdDto)">
+            <summary>
+            根據Id獲得對應的QuestionTypes資料
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionTypesManagement.IQuestionTypesAppService.InsertOrUpdate(EIRA.QuestionTypesManagement.Dto.QuestionTypesDto)">
+            <summary>
+            更新QuestionTypes資料
+            </summary>
+            <param name="input">QuestionTypes 資料</param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.QuestionTypesManagement.IQuestionTypesAppService.Delete(Abp.Application.Services.Dto.NullableIdDto)">
+            <summary>
+            更新QuestionTypes資料為InActive
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="P:EIRA.Users.Dto.ProfileInfoOutput.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:EIRA.Users.Dto.ProfileInfoOutput.Name">
+            <summary>
+            Last Name
+            </summary>
+        </member>
+        <member name="P:EIRA.Users.Dto.ProfileInfoOutput.Surname">
+            <summary>
+            First Name
+            </summary>
+        </member>
+        <member name="P:EIRA.Users.Dto.ProfileInfoOutput.EmailAddress">
+            <summary>
+            郵箱
+            </summary>
+        </member>
+        <member name="P:EIRA.Users.Dto.ProfileInfoOutput.Image">
+            <summary>
+            頭像
+            </summary>
+        </member>
+        <member name="P:EIRA.Users.Dto.ProfileInfoOutput.LastModificationTime">
+            <summary>
+            Latest Update Time
+            </summary>
+        </member>
+        <member name="P:EIRA.Users.Dto.ProfileInfoOutput.CreationTime">
+            <summary>
+            Create Time
+            </summary>
+        </member>
+        <member name="P:EIRA.Users.Dto.ProfileInfoOutput.LastLogin">
+            <summary>
+            Latest Login Time
+            </summary>
+        </member>
+        <member name="P:EIRA.Users.Dto.UserAllOutput.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:EIRA.Users.Dto.UserAllOutput.Code">
+            <summary>
+            User Id
+            </summary>
+        </member>
+        <member name="P:EIRA.Users.Dto.UserAllOutput.Name">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:EIRA.Users.Dto.UserAllOutput.BU">
+            <summary>
+            Included BU
+            </summary>
+        </member>
+        <member name="P:EIRA.Users.Dto.UserAllOutput.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="P:EIRA.Users.Dto.UserInfo.UpdateTime">
+            <summary>
+            更新時間
+            </summary>
+        </member>
+        <member name="P:EIRA.Users.Dto.UserInfo.UpdateUser">
+            <summary>
+            更新人
+            </summary>
+        </member>
+        <member name="P:EIRA.Users.Dto.UserInfo.IsCurrentLoginUser">
+            <summary>
+            當前修改帳號是否是當前登錄人
+            </summary>
+        </member>
+        <member name="M:EIRA.Users.IUserAppService.GetUserInfoAsync(Abp.Application.Services.Dto.NullableIdDto)">
+            <summary>
+            腕蚚揃蹋
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Users.IUserAppService.InsertOrUpdateAsync(EIRA.Users.Dto.UserInfo)">
+            <summary>
+            載陔蚚揃蹋
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Users.IUserAppService.GetPagedAllAsync(EIRA.Users.Dto.UserAllInput)">
+            <summary>
+            陂蚚蹈桶
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Users.IUserAppService.DisableAsync(Abp.Application.Services.Dto.EntityDto{System.Int64})">
+            <summary>
+            輦蚚蚚
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Users.IUserAppService.GetProfileInfoAsync">
+            <summary>
+            GetProfileInfo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Users.UserAppService.GetProfileInfoAsync">
+            <summary>
+            Get Profile Info
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Users.UserAppService.InsertOrUpdateAsync(EIRA.Users.Dto.UserInfo)">
+            <summary>
+            新增/修改用戶
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EIRA.Users.UserAppService.GetPagedAllAsync(EIRA.Users.Dto.UserAllInput)">
+            <summary>
+            獲取所有用戶
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
